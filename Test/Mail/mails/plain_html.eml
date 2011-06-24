@@ -1,0 +1,33 @@
+Return-Path: <from3@example.com>
+X-Original-To: to3@example.com
+Delivered-To: to3@example.com
+Message-ID: <484F2B24.5000108@sabel.jp>
+Date: Wed, 11 Jun 2008 10:32:20 +0900
+From: "from3" <from3@example.com>
+MIME-Version: 1.0
+To: to3@example.com
+Subject: =?ISO-2022-JP?B?GyRCN29MPhsoQg==?=
+Content-Type: multipart/alternative;
+ boundary="------------090105030302000205020906"
+
+This is a multi-part message in MIME format.
+--------------090105030302000205020906
+Content-Type: text/plain; charset=ISO-2022-JP
+Content-Transfer-Encoding: 7bit
+
+*本文*
+
+--------------090105030302000205020906
+Content-Type: text/html; charset=ISO-2022-JP
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+</head>
+<body bgcolor="#ffffff" text="#000000">
+<b>本文</b>
+</body>
+</html>
+
+--------------090105030302000205020906--

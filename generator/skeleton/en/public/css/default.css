@@ -1,0 +1,279 @@
+/** --------------------
+ * 余白
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+form,
+fieldset,
+p,
+div,
+pre,
+code,
+body,
+blockquote,
+samp,
+dir,
+legend,
+marquee,
+menu,
+td,
+th {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+/** --------------------
+ * 外枠
+ */
+fieldset,
+frame,
+frameset,
+img {
+  border-width: 0px 0px 0px 0px;
+  border-style: none none none none;
+}
+
+/** --------------------
+ * IE6,7用 文字の大きさを補正
+ */
+code,
+kbd,
+pre,
+samp,
+tt {
+  font-size: 100%;
+}
+
+/** --------------------
+ * 見出し
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+/** --------------------
+ * 文書作成者やサイト運営者の連絡先、文書に関する情報
+ */
+address {
+  font-style: normal;
+}
+
+/** --------------------
+ *  テーブル
+ */
+table {
+  border-collapse: collapse;
+  table-layout: auto;
+}
+
+table,
+th,
+td {
+  border: 1px solid;
+}
+
+caption {
+  text-align: center;
+  caption-side: top;
+}
+
+th {
+  vertical-align: top;
+  font-weight: normal;
+  text-align: left;
+  empty-cells: show;
+}
+
+td {
+  vertical-align: top;
+  text-align: left;
+  empty-cells: show;
+}
+
+/** --------------------
+ * 整形済みテキスト
+ */
+pre {
+  white-space: pre;
+}
+
+/**
+ * IE6,7用 letter-spacingを指定した要素内で連続したbr要素の偶数個目が無視されるバグの回避
+ */
+br {
+  letter-spacing: normal;
+}
+
+/**
+ * 水平線
+ */
+hr {
+  height: 1px;
+  border-style: none;
+  color: #d0d0d0;
+  background-color: #C0C0C0;
+  margin: 10px 0;
+}
+
+/** --------------------
+ * body
+ */
+body {
+  line-height: 1.1;
+  color: #444;
+  background: #fff url("images/headerBg.gif") repeat-x 0 0;
+  font-family: メイリオ,Meiryo,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka−等幅,Osaka-Mono,"ＭＳ Ｐゴシック","MS PGothic",Sans-Serif;
+  font-size: small;
+}
+
+/** --------------------
+ * header
+ */
+div#header {
+  margin-bottom: 5px;
+  padding-bottom: 14px;
+}
+
+div#header h1 {
+  height: 80px;
+  background: url("images/headerLogo.gif") no-repeat 0 0;
+  text-indent: -9999px;
+}
+
+/** --------------------
+ * contents
+ */
+div#contents {
+  margin: 0 auto;
+  width: 770px;
+  line-height: 1.6;
+  min-height: 350px;
+}
+
+.ie_6 div#contents {
+  height: 350px;
+}
+
+#contents table.sbl_basicTable {
+  width: 90%;
+}
+
+#contents table.sbl_basicTable th {
+  background-color: #e8efff;
+  border: 1px solid #ccc;
+}
+
+#contents table.sbl_basicTable td {
+  border: 1px solid #ccc;
+  padding: 0 5px;
+}
+
+/** --------------------
+ * error
+ */
+div.sbl_error {
+  margin: 10px 0;
+  padding: 10px;
+  border: 2px solid #cc6655;
+  background-color: #feeae6;
+}
+
+div.sbl_error ul {
+  list-style-type: none;
+}
+
+div.sbl_error ul li {
+  padding-left: 13px;
+  background: url("images/icon_1.gif") no-repeat 0 50%;
+}
+
+
+/** --------------------
+ * pager
+ */
+div.sbl_pager {
+  margin: 10px 0;
+}
+
+div.sbl_pager::after {
+  content: ".";
+  display: block;
+  visibility: hidden;
+  height: 0px;
+  font-size: 0;
+  line-height: 0;
+  clear: both;
+}
+
+.ie_6 div.sbl_pager,
+.ie_7 div.sbl_pager {
+  zoom: 1;
+}
+
+div.sbl_pager span,
+div.sbl_pager a {
+  margin-right: 5px;
+  padding: 1px 7px;
+  border: 1px solid #999;
+  display: block;
+  float: left;
+  color: #999;
+  text-decoration: none;
+}
+
+div.sbl_pager span {
+  background-color: #eee;
+  font-weight: bold;
+}
+
+div.sbl_pager a {
+  text-decoration: none;
+}
+
+div.sbl_pager a.prev,
+div.sbl_pager a.next {
+  background: #fbfbfb url("images/pagerBg.gif") repeat-x 0 100%;
+}
+
+div.sbl_pager a.prev {
+  margin-right: 10px;
+}
+
+div.sbl_pager a.next {
+  margin-right: 0px;
+  margin-left: 5px;
+}
+
+div.sbl_pager a:hover {
+  color: #fff;
+  background: #999;
+}
+
+/** --------------------
+ * footer
+ */
+div#footer {
+  margin-top: 5px;
+  padding: 12px 20px;
+  background: #fff url("images/footerBg.gif") repeat-x 0 0;
+  text-align: center;
+}
+
+div#footer p {
+  margin-top: 5px;
+}

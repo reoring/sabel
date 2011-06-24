@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<users>
+  <user id="2">
+    <name><![CDATA[<test><![CDATA['test']]]]><![CDATA[></test>]]></name>
+  </user>
+  <user>
+    <name>koike</name>
+    <age>80</age>
+  </user>
+</users>

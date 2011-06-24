@@ -1,0 +1,1 @@
+fuga/fuga.tpl

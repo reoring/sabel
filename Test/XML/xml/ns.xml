@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<nodes xmlns="http://www.example.com/default"
+       xmlns:foo="http://www.example.com/foo"
+       xmlns:bar="http://www.example.com/bar">
+  <foo:foo>
+    <foo:fooitem1>
+      <foo:fooitem2>fooitem2 value</foo:fooitem2>
+    </foo:fooitem1>
+    <defitem>
+      <defitem2>defitem2 value</defitem2>
+    </defitem>
+    <bar:baritem1>
+      <bar:baritem2>baritem2 value</bar:baritem2>
+    </bar:baritem1>
+    <baz xmlns="http://www.example.com/baz">
+      <bazitem1>
+        <bazitem2>
+          <bazitem3>bazitem3 value</bazitem3>
+        </bazitem2>
+      </bazitem1>
+    </baz>
+  </foo:foo>
+  <defitem3>
+    <defitem4>defitem4 value</defitem4>
+  </defitem3>
+</nodes>

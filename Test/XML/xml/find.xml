@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<users>
+  <user id="1">
+    <profile>
+      <name>tanaka</name>
+      <age>18</age>
+    </profile>
+    <foo>
+      <bar type="a">
+        <baz>test123</baz>
+      </bar>
+    </foo>
+    <test/>
+  </user>
+  <user id="2">
+    <profile>
+      <name>suzuki</name>
+      <age>25</age>
+    </profile>
+    <foo>
+      <bar type="b">
+        <baz>test456</baz>
+      </bar>
+    </foo>
+  </user>
+  <user id="3">
+    <profile>
+      <name>yamada</name>
+      <age>60</age>
+    </profile>
+    <foo>
+      <bar type="c">
+        <baz>123test</baz>
+      </bar>
+    </foo>
+  </user>
+  <user id="4">
+    <profile>
+      <name>satou</name>
+      <age>40</age>
+    </profile>
+    <foo>
+      <bar type="d">
+        <baz>456test</baz>
+      </bar>
+    </foo>
+  </user>
+  <user id="5">
+    <profile>
+      <name>koike</name>
+      <age>80</age>
+    </profile>
+    <foo>
+      <bar>
+        <baz>123456</baz>
+      </bar>
+    </foo>
+    <test/>
+  </user>
+</users>

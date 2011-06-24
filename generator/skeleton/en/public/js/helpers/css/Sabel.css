@@ -1,0 +1,46 @@
+/**
+ * Sabel Progress bar
+ */
+.sbl_progress {
+  margin: 10px auto;
+  width: 500px;
+}
+
+.sbl_progress_border_frame {
+  padding: 0px 3px 4px 0px;
+  background: url("images/progressBarBg.gif") no-repeat 100% 100%;
+}
+
+.sbl_progress_border {
+  border: 1px solid #103058;
+  position: relative;
+  height: 24px;
+  background-color: #d8f2ff;
+}
+
+.sbl_progress_bar {
+  position: relative;
+  height: 100%;
+  background: url("images/progressBar.gif") repeat-x 0 100%;
+  overflow: hidden;
+  width: 0;
+}
+
+.sbl_progress_text {
+  display: block;
+  position: absolute;
+  width: 495px;
+  color: #103058;
+  font-weight: bold;
+  text-align: center;
+  line-height: 24px;
+}
+
+.sbl_progress_bar .sbl_progress_text {
+  color: #fff;
+}
+
+.sbl_progress_status {
+  font-size: x-small;
+  text-align: right;
+}

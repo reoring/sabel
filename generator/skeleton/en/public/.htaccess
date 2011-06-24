@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  RewriteCond %{REQUEST_URI} \/\..+$
+  RewriteRule .* /notfound [R,L]
+
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule !\.(js|ico|swf|css|html)$ index.php [QSA,L]
+</IfModule>

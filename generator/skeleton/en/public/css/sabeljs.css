@@ -1,0 +1,208 @@
+.sbl_calendarFrame {
+  padding: 16px 1px 1px 1px;
+  border: 1px solid #444;
+  background: #999 url("../images/js/calendarFrameBg.gif") repeat-x 0 0;
+  position: absolute;
+  width: 218px;
+  line-height: 1.5;
+}
+
+.sbl_calendarFrame a.sbl_cal_close {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 12px;
+  height: 12px;
+  background: url("../images/js/calendarClose.gif") no-repeat 0 0;
+  text-indent: -9999px;
+  cursor: pointer;
+}
+
+.sbl_calendar {
+  border: solid #444;
+  border-width: 1px 0 0 1px;
+  background-color: #fff;
+}
+
+.sbl_calendar .sbl_cal_header {
+  padding: 2px;
+  border: solid #444;
+  border-width: 0 1px 1px 0;
+  position: relative;
+  color: #835e4c;
+  font-weight: bold;
+  text-align: center;
+}
+
+* html .sbl_calendar .sbl_cal_header,
+* html .sbl_calendar .sbl_cal_weekdays,
+* html .sbl_calendar .sbl_cal_days {
+  zoom: 1;
+}
+
+*+html .sbl_calendar .sbl_cal_header,
+*+html .sbl_calendar .sbl_cal_weekdays,
+*+html .sbl_calendar .sbl_cal_days {
+  zoom: 1;
+}
+
+.sbl_calendar .sbl_cal_header::after,
+.sbl_calendar .sbl_cal_weekdays::after,
+.sbl_calendar .sbl_cal_days::after {
+  content: ".";
+  display: block;
+  visibility: hidden;
+  height: 0px;
+  font-size: 0;
+  line-height: 0;
+  clear: both;
+}
+
+.sbl_calendar .sbl_cal_header a.sbl_page_l {
+  position: absolute;
+  width: 30px;
+  height: 15px;
+  top: 4px;
+  left: 4px;
+  background: url("../images/js/calendarLeftArrow.gif") no-repeat 0 0;
+  cursor: pointer;
+}
+
+.sbl_calendar .sbl_cal_header a.sbl_page_r {
+  position: absolute;
+  width: 30px;
+  height: 15px;
+  top: 4px;
+  right: 4px;
+  background: url("../images/js/calendarRightArrow.gif") no-repeat 100% 0;
+  cursor: pointer;
+}
+
+.sbl_calendar .sbl_cal_weekdays div,
+.sbl_calendar div.selectable,
+.sbl_calendar div.nonselectable {
+  padding: 0px 2px;
+  float: left;
+  width: 26px;
+  border: solid #444;
+  border-width: 0 1px 1px 0;
+  overflow: hidden;
+}
+
+.sbl_calendar div.selectable,
+.sbl_calendar div.nonselectable {
+  text-align: right;
+}
+
+.sbl_calendar .sbl_cal_weekdays div {
+  color: #835e4c;
+  background-color: #fbf6e0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.sbl_calendar div.nonselectable {
+  color: #bbb;
+}
+
+.sbl_calendar .sbl_cal_days div {
+	background-color: #ffffff;
+}
+
+.sbl_calendar div.selected {
+  background-color: #b99068;
+}
+
+.sbl_calendar div.hover {
+  background-color: #decebe;
+}
+
+.sbl_calendar div.saturday {
+  background-color: #e0e8fb;
+}
+
+.sbl_calendar div.sunday {
+  background-color: #fbe3e0;
+}
+
+div.sbl_dropdown {
+  position: relative;
+  zoom: 1;
+}
+
+div.sbl_dropdown:after {
+  content: ".";
+  display: block;
+  visibility: hidden;
+  height: 0px;
+  font-size: 0;
+  line-height: 0;
+  clear: both;
+}
+
+ul.sbl_dropdown_list,
+ul.sbl_dropdown_list li,
+ul.sbl_dropdown_list ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul.sbl_dropdown_list {
+  border-top: 1px solid #666;
+  border-right: 1px solid #666;
+  float: left;
+  line-height: 2.4;
+  font-size: small;
+  white-space: nowrap;
+}
+
+ul.sbl_dropdown_list li {
+  padding: 0 30px 0 10px;
+  border-bottom: 1px solid #666;
+  border-left: 1px solid #666;
+  float: left;
+  background: #eee;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+ul.sbl_dropdown_list li.sbl_noclick {
+  cursor: default;
+}
+
+ul.sbl_dropdown_list li.hover {
+  background-color: #d6d6d6;
+}
+
+ul.sbl_dropdown_list li ul,
+ul.sbl_dropdown_list li ul li {
+  border: 0 none;
+  float: none;
+}
+
+ul.sbl_dropdown_list li ul {
+  border-top: 1px solid #666;
+  border-left: 1px solid #666;
+  border-right: 1px solid #666;
+  position: absolute;
+  display: none;
+}
+
+ul.sbl_dropdown_list li ul li {
+  padding-right: 50px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #666;
+  border-left: 3px solid #a03232;
+  background: #f6f6f6;
+}
+
+ul.sbl_dropdown_list li ul li.icon {
+  background-image: url("../images/js/dropdownRightArrow.gif");
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+}
+
+/** IE6 hack */
+* html ul.sbl_dropdown_list li span {
+  display: inline-block;
+}

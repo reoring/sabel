@@ -1,0 +1,169 @@
+2010-07-13  ebin <yutaka@ebine.org>
+
+	* sabel/db/mysql/Metadata.php: MySQL5.1以降用の外部キー取得SQLに誤りがあった
+	ため修正。（他のスキーマの同名テーブルの外部キー情報も取得してしまう不具合）
+
+2010-07-13  ebin <yutaka@ebine.org>
+
+	* generator/skeleton/en/lib/form/Object.php: 複数のインプット名によるフォー
+	ムバリデーションの際、カンマで連結したインプット名をsubmitメソッドに渡さなく
+	てもいいように変更。
+
+2010-05-10  ebin <yutaka@ebine.org>
+
+	* sabel/map/Candidate.php: uriメソッドのバグ修正。
+
+2010-05-08  ebin <yutaka@ebine.org>
+
+	* sabel/test/*: test関連のクラスのリファクタリング。モデル（DB）を使用しない
+	Fixtureに対応。テスト実行時にtestsディレクトリをインクルードパスに追加するよ
+	うに変更。
+
+2010-05-02  ebin <yutaka@ebine.org>
+
+	* sabel/response/Redirector.php: uri()にもパラメータを渡せるように変更。
+	flagmentに対応。
+
+2010-04-29  ebin <yutaka@ebine.org>
+
+	* generator/skeleton/en/tasks/Install.php: アドオンインストーラ修正。
+	Sabel_Xml_AttributesクラスにtoArray()メソッド追加。
+
+2010-04-29  ebin <yutaka@ebine.org>
+
+	* generator/skeleton/en/tasks/Install.php: アドオンインストーラ実装。
+
+2010-04-28  ebin <yutaka@ebine.org>
+
+	* sabel/db/mysql/Driver.php: mysql_set_charset関数がない環境でも
+	mysql_set_charsetが実行されて落ちる問題の修正。
+
+2010-04-28  ebin <yutaka@ebine.org>
+
+	* sabel/xml/Element.php: insertNextSibling()のバグ修正。
+
+2010-04-27  ebin <yutaka@ebine.org>
+
+	* generator/skeleton/en/config/INIT.php : APP_ENCODING定数の追加。それにとも
+	なう若干の改修。Sabel_Util_String::mbTrim()のバグ修正。
+
+2010-04-26  ebin <yutaka@ebine.org>
+
+	* Test/*: テストを全体的に修正。
+
+2010-03-12  ebin <yutaka@ebine.org>
+
+	* generator/skeleton/*: フォーム周りを若干更新。
+
+2009-12-02  ebin <yutaka@ebine.org>
+
+	* sabel/test/*: 他パッケージの更新に追い付いてない問題の修正。
+
+2009-12-02  ebin <yutaka@ebine.org>
+
+	* sabel/http/*: httpパッケージ更新。移植完了。
+
+2009-12-01  ebin <yutaka@ebine.org>
+
+	* sabel/http/*: Zend Frameworkから移植（CurlとかProxyとか未完了）。
+
+2009-11-30  ebin <yutaka@ebine.org>
+
+	* sabel/kvs/Xml.php: ファイルロック実装。
+
+2009-11-27  ebin <yutaka@ebine.org>
+
+	* sabel/session/*: sessionパッケージ改修。
+
+2009-11-27  ebin <yutaka@ebine.org>
+
+	* sabel/functions/core.php: get_server_name()関数追加。environment()関数の削
+	除。それに関わる箇所の変更。lib/Cache.php作り直し。
+
+2009-11-27  ebin <yutaka@ebine.org>
+
+	* sabel/rss/*: rssパッケージ改修。
+
+2009-11-24  ebin <yutaka@ebine.org>
+
+	* sabel/xml/Element.php: Sabel.jsに合わせ、insertPreviousSibling,
+	insertNextSiblingメソッド実装。insertBefore, insertAfterメソッド改修。
+
+2009-11-24  ebin <yutaka@ebine.org>
+
+	* sabel/controller/Page.php: __get()と__set()をpublicに修正。
+	* sabel/cache: キャッシュクラス内部でKVSパッケージを使用するように変更。
+
+2009-11-24  ebin <yutaka@ebine.org>
+
+	* sabel/db/Model.php: Sabel_Db_ModelにselectForUpdateメソッド追加。
+
+2009-11-24  ebin <yutaka@ebine.org>
+
+	* sabel/kvs: KVS(Key-Value-Store)パッケージの追加。
+
+2009-11-23  hamaco  <hamanaka.kazuhiro@gmail.com>
+
+	* Sabel.js (Sabel.Widget.Calendar): 色々と改善。
+	* Sabel.js (Sabel.Element): insertPreviousSibling, insertNextSiblingメソッド追加。
+
+2009-11-23  MoriReo <mori.reo@gmail.com>
+
+	* sabel/Container.php: 設定クラスのbind->toにインスタンスを指定可能に変更。
+
+2009-11-22  MoriReo <mori.reo@gmail.com>
+
+	* sabel/Preference: パッケージを追加。
+
+2009-11-21  Ebin <yutaka@ebine.org>
+
+	* lib/Cache.php: lib/cache（キャッシュユーティリティ）を作成。
+
+2009-11-19  Ebin <yutaka@ebine.org>
+
+	* sabel/Functions.php: 削除し、sabel/functions/core.phpと
+	sabel/functions/db.phpに分けた。
+
+2009-11-18  Ebin <yutaka@ebine.org>
+
+	* sabel/xml/Document.php: newできないように変更。
+
+2009-11-17  Ebin <yutaka@ebine.org>
+
+	* sabel/xml/*: 使い易さの改善。
+
+2009-11-14  MoriReo <mori.reo@gmail.com>
+
+	* sabel/Container.php: 名前付きでの設定インタフェイスを削除。コードの改善。
+
+2009-11-13  Ebin <yutaka@ebine.org>
+
+	* sabel/Bus.php: プロセッサINSERT用のメソッドinsertProcessor追加。
+
+2009-11-12  MoriReo <mori.reo@gmail.com>
+
+	* sabel/Container.php: Sabel_Containerのload()時に、複数の設定クラスを
+	指定できるように変更。
+
+2009-11-11  MoriReo <mori.reo@gmail.com>
+
+	* sabel/Container.php: Sabel_AspectからStaticProxyを削除。
+
+2009-11-10  Ebin <yutaka@ebine.org>
+
+	* sabel/Functions.php: get_mime_type()関数追加。それに応じて
+	Sabel_Mail_Mime_Html::addImage()のMIMEタイプを省略できるように変更。
+
+2009-11-10  Ebin <yutaka@ebine.org>
+
+	* generator/skeleton/en/lib/form/Object.php: toHidden()メソッド追加（フォームの
+	値を全てhiddenで書き出す）
+
+2009-11-09  Ebin <yutaka@ebine.org>
+
+	* sabel/Functions.php: is_ipaddr()関数の正規表現を修正
+
+2009-11-09  hamaco  <hamanaka.kazuhiro@gmail.com>
+
+	* Sabel.js (Sabel.Event): getTargetメソッドの返り値をSabel.Elementに変更
+
